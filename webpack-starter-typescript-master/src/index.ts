@@ -1,6 +1,5 @@
 
+const wolverine = new Xmen('Logan', 'Lobesno');
 
+console.log(wolverine);
 
-const mensaje = 'Hola Mundo!';
-
-console.log( mensaje );
