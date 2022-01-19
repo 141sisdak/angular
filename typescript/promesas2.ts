@@ -17,7 +17,7 @@
 
    retirarDinero(1500)
    .then(montoActual => console.log('Te quedan ' + montoActual + ' €'))
-   .catch(error=> console.warn('No hay suficientes fondos'));
+   .catch(error=> console.warn(error));
 
 })();
 

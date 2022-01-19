@@ -1,14 +1,20 @@
+"use strict";
 (function () {
-    var enviarMision = function (xmen) {
-        console.log("Enviando a ".concat(xmen.nombre, " a la misi\u00F3n"));
-    };
-    var regresarMision = function (xmen) {
-        console.log("".concat(xmen.nombre, " regresando"));
-    };
-    var wolverine = {
-        nombre: 'Logan',
-        edad: 23
-    };
-    enviarMision(wolverine);
-    regresarMision(wolverine);
+    /**
+     * Orden:
+     * 1º --> obligatorios
+     * 2º --> opcionales
+     * 3º --> por defecto
+     */
+    function activar(quien, //Obligatorio
+    momento, //Opcional
+    objeto = 'batiseñal') {
+        if (momento) {
+            console.log(`${quien} activo la ${objeto} en la ${momento}`);
+        }
+        else {
+            console.log(`${quien} activo la ${objeto}`);
+        }
+    }
+    activar('Gordon', 'tarde');
 })();
