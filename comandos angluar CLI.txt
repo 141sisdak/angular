@@ -1,0 +1,4 @@
+- levantar proyecto: ng serve -o (-o para que abra el chrome directamente)
+
+- crear componente: ng g c components/[nombreComponente]
+  donde g = generate y c = component
