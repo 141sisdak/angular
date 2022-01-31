@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 animated fadeIn ">
+    <div *ngFor="let cancion of items" class="col">
+        <div (click)="verArtista(cancion)" class="card puntero">
+            <img [src]="cancion.images | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 *ngIf="cancion.artists" class="card-title">Cantante: {{cancion.artists[0].name}}</h5>
+                <p class="card-text">Canción: {{cancion.name}}</p>
+                <h6 *ngFor="let generos of cancion.genres" class="text-dark">{{generos}}</h6>
+
+            </div>
+        </div>
+    </div>
+</div>
