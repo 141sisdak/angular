@@ -1,0 +1,26 @@
+<h1 class="mt-5">Actores</h1>
+<hr>
+
+<div class="swiper mt-5">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div *ngFor="let actor of cast" class="swiper-slide">
+            <div class="movie-description">
+                <img src="https://image.tmdb.org/t/p/w300{{actor.profile_path}}" class="img-thumbnail" alt="">
+                <h3>{{actor.name}}</h3>
+                <p>{{actor.character}}</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div (click)="onSlidePrev2()" class="swiper-button-prev"></div>
+    <div (click)="onSlideNext2()" class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
